@@ -1,0 +1,110 @@
+body, h1, h2, h3, h4, h5, h6, .email, .name {
+    margin: 0; 
+    padding: 0;
+    
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:5px;    
+}
+
+.title{ 
+grid-column: 2/4;
+grid-row: 1/2; 
+background-color: white;
+text-align: center;
+margin: 10px;
+font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 60px;
+color: rgb(131, 131, 131);
+}
+
+img {
+    max-width: 400px;
+    min-height: 800px;
+    grid-column: 1/2;
+    grid-row: 1/-1;  
+}
+.download {
+    grid-column: 2/4;
+    grid-row: 2/3; 
+    background-color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.email {
+    grid-column: 2/4;
+    grid-row: 3/4; 
+    background-color: white;
+    text-align: left;
+    max-width: 625px;
+    max-height: 65px;
+    min-width: 625px;
+    min-height: 65px;
+    border-radius: 7px;
+    border: 1px gray solid;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.name {
+    grid-column: 2/4;
+    grid-row: 4/5; 
+    background-color: white;
+    text-align: left;
+    max-width: 625px;
+    max-height: 65px;
+    min-height: 65px;
+    min-width: 625px;
+    border-radius: 7px;
+    border: 1px gray solid;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+.check {
+    grid-column: 2/4;
+    grid-row: 5/6; 
+    background-color: white;
+    text-align: left;
+    padding-left: 30px;
+    font-family:sans-serif;
+
+
+
+}
+
+.subscribe{ 
+    background-color:#ff8800;
+    margin-left: 150px;
+    color:white;
+    grid-column: 2/4;
+    grid-row: 6/7; 
+    text-align: center;
+    border-radius: 15px; 
+    padding: 20px; 
+    max-height:300px ;
+    max-width:300px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subscribe :hover{ 
+    background-color:#fcca91;
+} 
+.padding {
+    padding: 30px;
+    column-gap: 5px;
+    color: rgb(131, 131, 131);
+    display: grid;
+    row-gap: 15px;
+
+}
+.X {
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(131, 131, 131);
+}
+.box {
+    grid-row: 6/7;
+}
