@@ -70,9 +70,10 @@ img {
     text-align: left;
     padding-left: 30px;
     font-family:sans-serif;
-
-
-
+}
+element.style {
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
 
 .subscribe{ 
