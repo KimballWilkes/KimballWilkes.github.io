@@ -23,6 +23,7 @@ main section img {
     box-sizing:border-box;
 } 
 .home-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 header {
@@ -106,13 +107,18 @@ nav {
     color: purple;
 }
 .msg {
-    background-color: #396E94;
+    background-color: #5f5f5f;
     font-size: .8em;
     line-height: 1.5em;
-    padding: 35px;
+    padding: 44px;
     grid-column: 6/10;
     grid-row: 6/7;
+    border-radius: 25px;
     box-shadow: 5px 5px 10px #6f7364;
+    height: 250px;
+    margin-top: 50px;
+    border: black solid 5px
+   
 }
 .msg h2 {
     color: white;
@@ -154,10 +160,11 @@ h4 {
 h2 {
     margin: 0;
 }
-.rivers-card {
+.river-card {
     margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
+    width: 100%;
 }
 .camping-card {
     margin: 200px 0;
@@ -186,6 +193,7 @@ h2 {
     border: 10px solid black;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 .card-img:hover {
     opacity: .6;
@@ -195,6 +203,7 @@ h2 {
     grid-column: 2/7;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
+    border: 30px;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
