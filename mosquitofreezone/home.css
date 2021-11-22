@@ -129,6 +129,8 @@ h1 {
     border-top: #A7B5C8 solid 150px;
     border-bottom: #A7B5C8 solid 150px;
     border-left: #A7B5C8 solid 150px;
+    border-right: #A7B5C8 solid 50px;
+
     justify-self: center;
     text-align: center;
     margin-right: 50px;
