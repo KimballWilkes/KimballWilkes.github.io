@@ -221,7 +221,7 @@ h2 {
         display: block;
         height: auto;
     }
-    nav, footer {
+    nav {
         flex-direction: column;
     }
     nav a {
@@ -255,8 +255,9 @@ h2 {
     }
     footer {
         margin-top: 25px;
+        flex-direction: column;
     }
-}
+    
 
 
 
