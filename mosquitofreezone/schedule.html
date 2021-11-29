@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Schedule Doc</title>
+    <link rel="stylesheet" href="schedule.css">
 </head>
 <header>
     <a id="logo_link" href="home.html"></a>
@@ -18,14 +19,14 @@
  </nav>
  </header>
 <body>
-<img src="images/grandpa.jpeg" alt="Family Playing Outdoors">
-    <label for="Date">Date:</label>
-<input type="date" id="date" name="date">
+<main>
+    <img class='grandpa' src="images/grandpa.jpeg" alt="Family Playing Outdoors">
+    
 
 
     <div id="input_info">
-    </div>
-    <form action="/my-handling-form-page" method="post">
+        </div>
+        <form action="/my-handling-form-page" method="post">
         <ul>
             <li>
                 <label for="name">Name:</label>
@@ -39,7 +40,11 @@
                 <label for="location">Address:</label>
                 <textarea id="address" name="address"></textarea>
             </li>
-            <label for="cars">Schedule a time:</label>
+
+            <label for="Date">Date:</label>
+                <input type="date" id="date" name="date"> <br>
+
+            <label for="cars">Time:</label>
                 <select name="times" id="times">
                         <option value="3:00 PM">3:00 PM</option>
                         <option value="4:00 PM">4:00 PM</option>
@@ -48,31 +53,34 @@
                         <option value="7:00 PM">7:00 PM</option>
                 </select>
 
-            <li class="button">
-                <button type="submit">Schedule appointment</button>
-            </li>
         </ul>
+        
        </form>
        <script>
-        // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
             feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
-    </script>
+        </script>
+        </div>
+    </div>    
 
-
-
+<div class="Schedule-Service">
+    <button class="dropbtn">Finish</button>
+    <div class="dropdown-content">
+      <a href="#">Refer a friend</a>
+      <a href="#">View promotions</a>
+      <a href="#">Proceed to checkout</a>
+    </div>
+</main>
+<section class="msg">
+    <h2> More Than A Pest Control Service</h2>
+    <p>With our 100% satisfaction guarentee we ensure quality in every treatment.</p>
+</section>
 
 
     <footer>

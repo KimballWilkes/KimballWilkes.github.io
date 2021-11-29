@@ -64,3 +64,9 @@
     color: rgb(109, 141, 230);
     font-weight: 390;
 }
+.button:hover {
+    background-color: rgb(122, 150, 226);
+}
+.issue:hover {
+    color: rgb(49, 61, 95);
+}
