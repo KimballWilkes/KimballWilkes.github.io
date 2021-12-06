@@ -115,6 +115,7 @@ h1 {
     margin-bottom: -100px;
     height: 140px;
     color: white;
+    text-decoration: none;
 }
 .schedule1:hover {
     background-color: #ffd885;
