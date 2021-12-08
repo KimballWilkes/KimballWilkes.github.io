@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.sign-up{ 
+
+    color: rgb(104, 141, 206); 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.2em;
+    text-align: left;
+    grid-column: 1/2;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Open Sans';
+}
+
+main{
+    height: 80%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login-image{
+    overflow: hidden;
+}
+.login-image img {
+    height: 500px;
+    width: 700px;
+}
+
+.text {
+    justify-self: left;
+    grid-column: 1/2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color:gray; 
+    margin: 40px 40px 40px 0px;
+}
+
+.submit, .button{
+    color: rgb(211, 209, 209);
+    text-align: center;
+    height: 40px;
+    border-radius: 7px;
+    width: 300px;
+    background-color: rgb(23, 59, 128);
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    margin-top: 6px;
+}
+.submit:hover {
+    background-color: rgb(81, 111, 167);
+} 
+.name{
+    width: 300px;
+    margin: 5px 0;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border:2px solid rgb(207, 195, 195);
+    border-radius: 7px;
+}
